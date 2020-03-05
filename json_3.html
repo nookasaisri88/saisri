@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    function submit(){
+        var fn1=document.getElementById('1fname').value;
+        var ln1=document.getElementById('1lname').value;
+        var rn1=document.getElementById('1rno').value;
+        var mark1=document.getElementById('marks1').value;
+        var json1={fname:fn1,lname:ln1,rno:rn1,mark:mark1};
+
+        var fn2=document.getElementById("2fname").value;
+        var ln2=document.getElementById("2lname").value;
+        var rn2=document.getElementById("2rno").value;
+        var mark2=document.getElementById('marks2').value;
+        var json2={fname:fn2,lname:ln2,rno:rn2,mark:mark2};
+
+        var fn3=document.getElementById("3fname").value;
+        var ln3=document.getElementById("3lname").value;
+        var rn3=document.getElementById("3rno").value;
+        var mark3=document.getElementById('marks3').value;
+        var json3={fname:fn3,lname:ln3,rno:rn3,mark:mark3};
+
+        document.write("<table border='2' width='50%''>");
+        document.write("<tr><td>"+json1.fname+"</td><td>"+json1.lname+"</td><td>"+json1.rno+"</td><td>"+json1.mark+"</td></tr>");
+        document.write("<tr><td>"+json2.fname+"</td><td>"+json2.lname+"</td><td>"+json2.rno+"</td><td>"+json2.mark+"</td></tr>");
+        document.write("<tr><td>"+json3.fname+"</td><td>"+json3.lname+"</td><td>"+json3.rno+"</td><td>"+json3.mark+"</td></tr>");
+        document.write("</table>");
+        var avg=parseInt(mark1)+parseInt(mark2)+parseInt(mark3);
+        document.write("<h3>"+avg/3+"</h3>");
+    }
+    </script>
+</head>
+<body>
+    
+        <h4>Enter details of 1st student</h4>
+        Enter first name<input type="text" id="1fname"><br><br>
+        Enter last name<input type="text" id="1lname"><br><br>
+        Enter rollno<input type="text" id="1rno"><br><br>
+        Enter marks<input type="text" id="marks1"><br><br>
+
+        <h4>Enter details of 2nd student</h4>
+        Enter first name<input type="text" id="2fname"><br><br>
+        Enter last name<input type="text" id="2lname"><br><br>
+        Enter rollno<input type="text" id="2rno"><br><br>
+        Enter marks<input type="text" id="marks2"><br><br>
+        
+        <h4>Enter details of 3nd student</h4>
+        Enter first name<input type="text" id="3fname"><br><br>
+        Enter last name<input type="text" id="3lname"><br><br>
+        Enter rollno<input type="text" id="3rno"><br><br>
+        Enter marks<input type="text" id="marks3"><br><br>
+
+        <input type="button" value="Submit" onclick="submit();">
+        
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script>
+      function Wantday(){
+      var i=new Date().getDay();
+      var res=0;
+      switch(i)
+      {
+            case 1:
+                res="Monday";
+                break;
+            case 2:
+                res="Tuesday";
+                break;
+            case 3:
+                res="Wednesday";
+                break;
+            case 4:
+                res="Thursday";
+                break;
+            case 5:
+                res="Friday";
+                break;
+            case 6:
+                res="Saturday";
+                break;
+            case 7:
+                res="Sunday";
+                break;
+            default:
+                document.write("Not a good day");
+             
+        
+      }
+      document.write("Today is:"+res);
+      }
+  </script>
+</head>
+<body>
+    <input type="button" value="checkDay" onclick="Wantday();" 
+</body>
+</html>

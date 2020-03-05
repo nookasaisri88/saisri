@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="ch">My Table</h1>
+    <table border="2" width="50%">
+    <script lang="text/javascript">
+    (function(){
+        alert("hello");
+    })();
+    var elem=document.getElementById('ch');
+    var arr=[[1,"ram",100],[2,"jake",399],[3,"sai",543]];
+    document.write("<th>"+"Rollno"+"</th>"+"<th>"+"Name"+"</th>"+"<th>"+"Salary"+"</th>")
+    for(var j in arr){
+        document.write("<tr>");
+        document.write("<td>"+arr[j][0]+"</td>");
+        document.write("<td>"+arr[j][1]+"</td>");
+        document.write("<td>"+arr[j][2]+"</td>");
+        document.write("</tr>");
+    }
+    </script>
+    </table>
+</body>
+</html>

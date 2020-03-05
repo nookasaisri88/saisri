@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script>
+      function solve()
+      {
+          var a=parseInt(document.getElementById("num1").value);
+          var b=parseInt(document.getElementById("num2").value);
+          var choice=parseInt(document.getElementById("choices").value);
+            switch(choice)
+            {
+                case 1:
+                    var res=a+b;
+                    document.write("Addition:"+res);
+                    break;
+                case 2:
+                    var res=a-b;
+                    document.write("Subtraction:"+res);
+                    break;
+                case 3:
+                    var res=a*b;
+                    document.write("Multiplication:"+res);
+                    break;
+                case 4:
+                    var res=a/b;
+                    document.write("Division:"+res);
+                    break;
+                default:
+                    document.write("enter correct numbers");
+            }
+      }
+  </script>
+</head>
+<body>
+   Enter 1st number<input type="text" id="num1"><br>
+   Enter 2nd number<input type="text" id="num2"><br>
+    <p>Enter your choice 1.add 2.sub 3.mul 4.Division</p>
+    Enter choice<input type="text" id="choices"><br>
+    <input type="button" value="Result" onclick="solve();"
+</body>
+</html>

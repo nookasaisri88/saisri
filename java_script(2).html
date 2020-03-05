@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script>
+      function myAddition(){
+          var i=10;
+          var j=20;
+          return i+j;
+      }
+      function mySubtraction(){
+          var i=10;
+          var j=20;
+          alert(i-j);
+      }
+      function me(){
+          var i=document.getElementById('sub1').value;
+          var j=document.getElementById('sub2').value;
+          alert(parseInt(i)+parseInt(j));
+          var k=parseInt(i)+parseInt(j);
+          document.getElementById('sum').value=k;
+      }
+  </script>
+</head>
+<body>
+    <div class="container">
+        Subject 1 <input type="text" id="sub1"><br>
+        Subject 2 <input type="text" id="sub2"><br>
+        <input type="button" value="add" onclick="me();"><br>
+       Sum= <input type="text" id="sum"><br>
+        <input type="button" value="CLICK ME" onclick="mySubtraction();"><br>
+        <input type="button" value="CLICK" onclick="alert(myAddition());"><br>
+        <input type="button" value="CLICK ME" onclick="alert('hello again');alert(myAddition());"><br>
+    </div>
+</body>
+</html>
